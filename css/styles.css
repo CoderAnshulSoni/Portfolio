@@ -1,0 +1,205 @@
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+h2, h3{
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+p{
+  color: grey;
+  margin-top: 1%;
+}
+
+body{
+  font-family: "Montserrat";
+}
+
+.describe{
+  font-weight: normal;
+}
+
+.container-fluid{
+  padding: 3% 15%;
+}
+
+.h2-text{
+  text-align: center;
+}
+
+#about{
+  padding: 0 2% 0 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#title {
+  background-color: #1C658C;
+  color: #fff;
+  padding-bottom: 5%;
+}
+
+/* Navigation Bar */
+
+.navbar{
+  padding: 0  0 4.5rem;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.navbar-brand{
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Ubuntu";
+}
+
+.nav-link{
+  font-size: 1.2rem;
+}
+
+/* Download Buttons */
+
+.download-Btn{
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+
+.title-Image{
+  width: 60%;
+  position: absolute;
+  right: 5%;
+  border-radius: 5rem;
+}
+
+@media (max-width: 1028px){
+  #title{
+    text-align: center;
+  }
+  .title-Image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* feature */
+
+#about{
+  background-color: #D8D2CB;
+  padding: 7% 15%;
+  position: relative;
+  z-index: 1;
+}
+
+.about-box{
+  text-align: center;
+  padding: 5%;
+}
+
+.icon{
+  color: #398AB9;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+  color: #1C658C;
+}
+
+/* Services  */
+
+#Services {
+  text-align: center;
+  background-color: #398AB9;
+  color: white;
+  padding-top: 5%;
+}
+
+.Services-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+}
+
+/* #service{
+  text-align: center;
+  padding: 100px;
+} */
+
+.pricing-col{
+  padding: 3% 2%;
+}
+
+/* cta */
+
+#Skills{
+  background-color: #D8D2CB;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.Skills-text{
+  font-family: "Montserrat";
+  font-weight: 900px;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+#footer-text{
+  text-align: center;
+}
+
+#Contact{
+  background-color: #398AB9;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.social-icon{
+  margin: 20px 10px;
+}
+
+* {box-sizing:border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+  padding-left: 0;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.java{width: 87%; background-color: #F1D00A;}
+.c{width: 85%; background-color: #F76E11;}
+.html {width: 82%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white;
+
+    margin: 5%;
+}
+.button:hover{
+  font-weight: bold;
+}
