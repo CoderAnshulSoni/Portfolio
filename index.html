@@ -1,184 +1,369 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="icon" href="favicon.ico">
-  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ICON -->
-  <script src="https://kit.fontawesome.com/2031c203f0.js" crossorigin="anonymous"></script>
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--=============== BOXICONS ===============-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-  <!-- font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="">
 
-  <!-- CSS stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-  <!-- bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <title> Anshul Soni </title>
 </head>
 
 <body>
+  <!--=============== HEADER ===============-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Anshul Soni</a>
 
-  <section id="title">
-    <div class="container-fluid">
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class='bx bx-home'></i>
+            </a>
+          </li>
 
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-          </ul>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class='bx bxs-user-rectangle'></i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class='bx bx-book-reader'></i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#work" class="nav__link">
+              <i class='bx bx-briefcase'></i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class='bx bxs-contact'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Theme chnage button-->
+      <i class='bx bx-moon change-theme' id="theme-button"></i>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== HOME ===============-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__greeting">Hello, I'm</span>
+          <h1 class="home__name">Anshul Soni</h1>
+          <h3 class="home__education">A passionate software enthusiast who enjoys coding and creating innovative solutions. Always eager to learn and explore new technologies, I thrive on solving complex problems with creativity and logic.</h3>
+
+          <div class="home__buttons">
+            <a download= "" href="assets/pdf/Anshul Soni.pdf" class="button button--ghost">
+              Download Resume
+            </a>
+            <a href="#about" class="button">About me</a>
+          </div>
         </div>
-      </nav>
 
-      <!-- Title -->
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Hello, I'm Anshul Soni.</h1>
-          <h1>I'm a Full-stack developer.</h1>
-          <button type="button" class="download-Btn btn btn-dark btn-lg">Hire Me</button>
-        </div>
-        <div class="col-lg-6">
-          <img class="title-Image" src="images/My-img.jpg" alt="Me">
+        <div class="home__handle">
+          <img src="assets/img/Software-Engineering-Transparent-File.png" alt="" class="home__img" />
         </div>
 
-      </div>
-  </section>
+        <div class="home__social">
+          <a href="https://www.linkedin.com/in/anshul-soni-01b4531b7/" target="_blank" class="home__social-link">
+            <i class='bx bxl-linkedin-square' ></i>
+          </a>
 
-
-  <!-- About -->
-
-  <section id="about">
-    <h2 class="h2-text">About Me : </h2>
-    <div class="row">
-      <div class="about-box col-lg-4">
-        <i class="icon fas fa-check-circle fa-4x"></i>
-        <h3>Adaptable</h3>
-        <p>Able to adjust myself readily to different conditions</p>
-      </div>
-
-      <div class="about-box col-lg-4">
-        <i class="icon fas fa-bullseye fa-4x"></i>
-        <h3>Team Worker</h3>
-        <p>Unity is strength, when there is teamwork and collaboration, wonderful things can be achieved.</p>
-      </div>
-
-      <div class="about-box col-lg-4">
-        <i class="icon fas fa-heart fa-4x"></i>
-        <h3>Love to Code</h3>
-        <p>I would love to change the world but they won't give me the source code.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Service -->
-
-  <section id="Services">
-    <h2 class="h2-text">Services I Provide:</h2>
-    <div id="Services-carousel" class="carousel slide" data-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-
-          <h2 class="h2-text">Programmer</h2>
-          <h2 class="describe">Coding real life application to program is my hobby as I have learnt languages "C, JAVA"</h2>
-          <img class="Services-image" src="images/code.png" alt="code">
+          <a href="https://github.com/CoderAnshulSoni" target="_blank" class="home__social-link">
+            <i class='bx bxl-github' ></i>
+          </a>
 
         </div>
 
-        <div class="carousel-item">
+        <a href="#about" class="home__scroll">
+          <i class='bx bx-mouse home__scroll-icon' ></i>
+          <span class="home__scroll-name">Scroll Down</span>
+        </a>
+      </div>
+    </section>
 
-          <h2 class="h2-text">Web Developer</h2>
-          <h2 class="describe">As a making web design make me more and more satiesfied. I generally implement my design to websites</h2>
-          <img class="Services-image" src="images/web.jpg" alt="web">
+    <!--=============== ABOUT ===============-->
+    <section class="about section" id="about">
+      <span class="section__subtitle">My Intro</span>
+      <h2 class="section__title">About Me</h2>
+      
+      <div class="about__container container grid">
+        <img src="assets/img/Anshul_Soni.JPG" alt="" class="about__img"/>
 
+        <div class="about__data"><br>
+          <p class="about__description">
+            A tech-driven individual with a strong curiosity for emerging technologies and a problem-solving mindset. Enjoys turning ideas into reality through coding, constantly pushing the boundaries of innovation. Dedicated to learning and logical thinking, tackling challenges effectively. With a keen eye for detail and a passion for efficiency, strives to create impactful and intelligent solutions in the ever-evolving world of technology.
+          </p>
+          <div class="about__info">
+
+            <div class="about__box">
+              <i class='bx bx-award about__icon' ></i>
+              <h3 class="about__titile">Experience</h3>
+              <span class="about__subtitle">1+ Year working</span>
+            </div>
+            <a href="#contact" class="button about__contact__button">Contact me</a>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+
+    <!--=============== SKILLS ===============-->
+    <section class="skills section" id="skills">
+      <span class="section__subtitle">My Abilities</span>
+      <h2 class="section__title">Work Experience</h2>
+
+      <div class="skills__container container grid">
+
+        <div class="skills__content">
+          <h3 class="skills__title">Java Developer @ TCS</h3>
+          <h4 class="skills__duration">March, 2024 - Current</h4>
+
+          <div class="skills__box">
+            <div class="skills__group">
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+                <div>
+                  <h3 class="skills__name">Working on developing and optimizing REST APIs using Java, Spring Boot, and SQL to enhance system performance.</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check' ></i>
+                <div>
+                  <h3 class="skills__name">Refactoring the existing application services using latest development pratices.</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check' ></i>
+                <div>
+                  <h3 class="skills__name">Integrating multiple subsystems to enhance interoperability and performance.</h3>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="skills__content">
+          <h3 class="skills__title">Technical Consultant @ BFL</h3>
+              <h4 class="skills__duration">July, 2023 - November, 2023</h4>
+
+          <div class="skills__box">
+            <div class="skills__group">
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+                <div>
+                  <h3 class="skills__name">Worked as a C# Developer, helping design and develop a web application from scratch.</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check' ></i>
+                <div>
+                  <h3 class="skills__name">Implemented custom forms based on user story requirements, ensuring specific conditions and validations were met.</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check' ></i>
+                <div>
+                  <h3 class="skills__name">Integrated data with the ADF Legal System database to enable seamless transfer of data and services. </h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <a class="carousel-control-prev" href="#Services-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#Services-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
+    <!--=============== Education ===============-->
+    <section class="services section">
+      <span class="section__subtitle">Education BackGround</span>
+      <h2 class="section__title">Academic Details</h2>
 
+      <div class="services__container container grid">
+        
+        <div class="services__card">
+          <h3 class="services__title">Bachelor of Technology<br>in<br>Computer Science Engineering</h3>
+
+          <span class="services__button">
+            See more <i class='bx bx-right-arrow-alt services__icon' ></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class='bx bx-x services__modal-close' ></i>
+
+              <h3 class="services__modal-title">Bachelor of Technology</h3>
+              <p class="services__modal-description">
+                Computer Science Engineering (2019-2023)
+                <br>
+                <br>
+                <img class="services__modal__logo__utu" src="assets/img/RGPVLOGO.jpg"/>
+              </p>
+              <ul class="services__modal-list">
+                <li class="services__modal-item">
+                  <i class='bx bx-check services__modal-icon' ></i>
+                  <p class="services__modal-info">
+                    Computer Science Engineering
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </section>
+
+    <!--=============== Work ===============-->
+    <section class="work section" id="work">
+      <span class="section__subtitle">Projects</span>
+      <h2 class="section__title">Recent Ones</h2>
+
+      <div class="work__container container grid">
+        <div class="work__card design_pattern">
+          <img src="assets/img/PensionSeva.png" alt="" class="work__img" />
+          <h3 class="work__title"><a href="https://www.pensionseva.sbi/" target="_blank" class="work__button">
+            SBI's Pension Seva <i class='bx bx-link-external'></i>
+            </a>
+          </h3>
+        </div>
+
+        <div class="work__card mix design_pattern">
+          <img src="assets/img/GCW.png" alt="" class="work__img" />
+          <h3 class="work__title"><a href="https://gcw.adflegal.org/" target="_blank" class="work__button">
+            Grant Community <i class='bx bx-link-external'></i>
+            </a>
+          </h3>
+
+        </div>
+
+        <div class="work__card mix design_pattern">
+          <img src="assets/img/JobPortal.png" alt="" class="work__img" />
+          <h3 class="work__title">Personal Project: <a href="https://github.com/CoderAnshulSoni/Job-Web-App/tree/master" target="_blank" class="work__button">
+            Job Portal <i class='bx bx-link-external'></i>
+            </a>
+          </h3>
+
+        </div>
+
+        <div class="work__card mix design_pattern">
+          <img src="assets/img/VocationGuidance.jpg" alt="" class="work__img" />
+          <h3 class="work__title">Personal Project: <a href="https://github.com/CoderAnshulSoni/vgs" target="_blank" class="work__button">
+            Vocation Guidance <i class='bx bx-link-external'></i>
+            </a>
+          </h3>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--=============== CONTACT ===============-->
+    <section class="contact section" id="contact">
+      <span class="section__subtitle">Get in touch</span>
+      <h2 class="section__title">Contact Me</h2>
+      <h3 class="contact__title">Talk to me</h3>
+      <div class="contact__container container grid">
+
+            <div class="contact__card">
+              <i class='bx bxl-gmail contact__card-icon' ></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">anshulsoni977@gmail.com</span>
+
+              <a href="mailto:anshulsoni@gmail.com" target="_blank" class="contact__button">
+                Write Me<i class='bx bxs-right-arrow-alt contact__button-icon' ></i>
+              </a>
+            </div>
+
+            <div class="contact__card">'
+              <i class='bx bxl-whatsapp contact__card-icon' ></i>
+              <h3 class="contact__card-title">Whatsapp</h3>
+              <span class="contact__card-data">+91-9179236522</span>
+
+              <a href="https://api.whatsapp.com/send?phone=919179236522&text=Hello, more information" target="_blank" class="contact__button">
+                Let's Chat<i class='bx bxs-right-arrow-alt contact__button-icon' ></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class='bx bxl-linkedin contact__card-icon'></i>
+              <h3 class="contact__card-title">LinkedIn</h3>
+              <span class="contact__card-data">anshul-soni-01b4531b7</span>
+
+              <a href="https://www.linkedin.com/in/anshul-soni-01b4531b7/" target="_blank" class="contact__button">
+                Message me<i class='bx bxs-right-arrow-alt contact__button-icon' ></i>
+              </a>
+            </div>
+          
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer">
+    <div class="footer__container container">
+      <h1 class="footer__title"><span class="footer__copy">
+        &#169; anshul.soni <br>@ All rights reserved
+      </span>
+      <br>
+    </h1>
+      <ul class="footer__list">
+        <li>
+          <a href="#about" class="footer__link"></a>
+        </li>
+
+        <li>
+          <a href="#work" class="footer__link"></a>
+        </li>
+      </ul>
+
+      
     </div>
-
-  </section>
-
-  <!-- Skills -->
-
-  <section id="Skills">
-
-    <h2 class="h2-text">My Skills: </h2>
-
-    <p>JAVA</p>
-    <div class="container">
-      <div class="skills java">87%</div>
-    </div>
-
-    <p>C</p>
-    <div class="container">
-      <div class="skills c">85%</div>
-    </div>
-
-    <p>HTML</p>
-    <div class="container">
-      <div class="skills html">82%</div>
-    </div>
-
-    <p>CSS</p>
-    <div class="container">
-      <div class="skills css">80%</div>
-    </div>
-
-    <p>JavaScript</p>
-    <div class="container">
-      <div class="skills js">65%</div>
-    </div>
-
-  </section>
-
-
-  <!-- Footer -->
-
-  <section id="Contact">
-    <h2>Contact Me: </h2>
-    <a href="https://www.linkedin.com/in/anshul-soni-01b4531b7" class="button">Linkdin</a>
-    <a href="https://shrouded-fjord-39813.herokuapp.com/" class="button">Sign-Up</a>
-    <br>
-    <i class="social-icon fas fa-envelope"></i>
-    <em>anshulsoni977@gmail.com</em>
-  </section>
-  <footer>
-    <p id="footer-text">© Copyright 2022 Anshul Soni</p>
   </footer>
-  </div>
 
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--=============== MIXITUP FILTER ===============-->
+  <script src="assets/js/mixitup.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
